@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rajdhani Mono v0.2 · 字距与下划线对比</title>
+<style>
+__FONT_FACES__
+:root{color-scheme:dark;--bg:#10171e;--panel:#18222c;--fg:#dfe8f1;--muted:#a8b5c2;--edge:#344352;--accent:#7de0cc}
+body[data-theme="light"]{color-scheme:light;--bg:#f4f4f0;--panel:#fff;--fg:#253342;--muted:#566371;--edge:#ced5db;--accent:#116f63}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif}
+main{max-width:1240px;margin:auto;padding:32px 24px 48px}h1{font-size:26px;margin:0 0 8px}p{color:var(--muted);margin:0 0 22px}
+.controls{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-bottom:24px}label{display:flex;gap:8px;align-items:center}
+select,textarea{font:inherit;background:var(--panel);color:var(--fg);border:1px solid var(--edge);padding:8px 10px;border-radius:6px}input{accent-color:var(--accent)}
+textarea{display:block;width:100%;min-height:116px;font-family:ui-monospace,monospace;resize:vertical;margin:8px 0 20px}
+.panes{display:grid;grid-template-columns:1fr 1fr;gap:18px}.pane{background:var(--panel);border:1px solid var(--edge);border-radius:10px;padding:18px;min-width:0;overflow:auto}
+h2{font-size:15px;font-weight:500;margin:0 0 14px;color:var(--muted)}
+pre{font-size:28px;font-weight:500;line-height:1.2;margin:0;font-kerning:none;font-variant-ligatures:none;letter-spacing:0}
+#before{font-family:'Rajdhani Previous',monospace}#after{font-family:'Rajdhani Mono',monospace}
+.underline-demo{margin-top:22px;font-size:14px;color:var(--muted)}.underline-demo span{font-size:28px;text-decoration-line:underline;text-decoration-thickness:from-font;font-weight:500;color:var(--fg)}
+.previous-decoration{font-family:'Rajdhani Previous',monospace}.new-decoration{font-family:'Rajdhani Mono',monospace}
+output{color:var(--accent)}@media(max-width:760px){.panes{grid-template-columns:1fr}main{padding:24px 16px}}
+</style>
+</head>
+<body data-theme="dark"><main>
+<h1>Rajdhani Mono · 字距与下划线</h1>
+<p>v0.2 字格 560 → 520，约减少 7.1%；字母轮廓尺寸保留。下划线随字重调整粗细。</p>
+<div class="controls">
+<label for="weight">字重 <select id="weight"><option value="300">Light · 300</option><option value="400">Regular · 400</option><option value="500" selected>Medium · 500</option><option value="600">SemiBold · 600</option><option value="700">Bold · 700</option></select></label>
+<label for="size">字号 <output id="size-value">28 px</output> <input id="size" type="range" min="12" max="40" value="28"></label>
+<label for="theme">背景 <select id="theme"><option value="dark">深色</option><option value="light">浅色</option></select></label>
+</div>
+<label for="sample">对比文字</label>
+<textarea id="sample" spellcheck="false">MWmw Il1 O0 0123456789
+foo_bar__H_H__0123456789
+the_quick_brown_fox
+{} [] () != == -&gt; =&gt;
+______________________</textarea>
+<div class="panes">
+<section class="pane"><h2>上一版 v0.1 · 字宽 560</h2><pre id="before"></pre><div class="underline-demo">文本下划线<br><span class="previous-decoration">Rajdhani Mono</span></div></section>
+<section class="pane"><h2>新版 v0.2 · 字宽 520</h2><pre id="after"></pre><div class="underline-demo">文本下划线<br><span class="new-decoration">Rajdhani Mono</span></div></section>
+</div>
+</main>
+<script>
+const sample=document.getElementById('sample');
+const size=document.getElementById('size');
+const weight=document.getElementById('weight');
+const theme=document.getElementById('theme');
+const previews=[document.getElementById('before'),document.getElementById('after')];
+function update(){
+  for(const el of previews){el.textContent=sample.value;el.style.fontSize=size.value+'px';el.style.fontWeight=weight.value;}
+  for(const el of document.querySelectorAll('.underline-demo span')){el.style.fontSize=size.value+'px';el.style.fontWeight=weight.value;}
+  document.getElementById('size-value').textContent=size.value+' px';
+  document.body.dataset.theme=theme.value;
+}
+for(const el of [sample,size,weight,theme])el.addEventListener('input',update);
+update();
+</script></body></html>

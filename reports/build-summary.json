@@ -1,0 +1,52 @@
+[
+  {
+    "style": "Light",
+    "weight": 300,
+    "codepoints": 854,
+    "glyphs": 856,
+    "borrowed_symbol_count": 474,
+    "box_donor": "Thin",
+    "advance": 520,
+    "underscore_thickness": 30
+  },
+  {
+    "style": "Regular",
+    "weight": 400,
+    "codepoints": 854,
+    "glyphs": 856,
+    "borrowed_symbol_count": 474,
+    "box_donor": "ExtraLight",
+    "advance": 520,
+    "underscore_thickness": 44
+  },
+  {
+    "style": "Medium",
+    "weight": 500,
+    "codepoints": 854,
+    "glyphs": 856,
+    "borrowed_symbol_count": 474,
+    "box_donor": "Light",
+    "advance": 520,
+    "underscore_thickness": 61
+  },
+  {
+    "style": "SemiBold",
+    "weight": 600,
+    "codepoints": 854,
+    "glyphs": 856,
+    "borrowed_symbol_count": 474,
+    "box_donor": "Regular",
+    "advance": 520,
+    "underscore_thickness": 80
+  },
+  {
+    "style": "Bold",
+    "weight": 700,
+    "codepoints": 854,
+    "glyphs": 856,
+    "borrowed_symbol_count": 474,
+    "box_donor": "Bold",
+    "advance": 520,
+    "underscore_thickness": 102
+  }
+]

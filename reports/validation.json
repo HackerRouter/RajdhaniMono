@@ -1,0 +1,167 @@
+{
+  "release": "0.2",
+  "date": "2026-10-09",
+  "status": "passed",
+  "tests": [
+    {
+      "style": "Light",
+      "weight": 300,
+      "codepoints": 854,
+      "glyphs": 856,
+      "cell_advance": 520,
+      "ascii_shaping": "95/95 fixed advances, zero positioning offsets",
+      "fontconfig_spacing": 100,
+      "nfc_nfd": "passed",
+      "stem_preservation": "passed",
+      "terminal_cell_edges": "passed",
+      "underscore_thickness": 30,
+      "rasterized_glyph_sizes": 3416,
+      "raster_sizes_px": [
+        12,
+        16,
+        20,
+        32
+      ],
+      "woff2_roundtrip": "passed",
+      "ots": [
+        {
+          "file": "RajdhaniMono-Light.ttf",
+          "result": "passed"
+        },
+        {
+          "file": "RajdhaniMono-Light.woff2",
+          "result": "passed"
+        }
+      ],
+      "sha256": "7b88742449beff3d2388782e5ec78ea68012f40b67cfe90183e69e69774ec48e"
+    },
+    {
+      "style": "Regular",
+      "weight": 400,
+      "codepoints": 854,
+      "glyphs": 856,
+      "cell_advance": 520,
+      "ascii_shaping": "95/95 fixed advances, zero positioning offsets",
+      "fontconfig_spacing": 100,
+      "nfc_nfd": "passed",
+      "stem_preservation": "passed",
+      "terminal_cell_edges": "passed",
+      "underscore_thickness": 44,
+      "rasterized_glyph_sizes": 3416,
+      "raster_sizes_px": [
+        12,
+        16,
+        20,
+        32
+      ],
+      "woff2_roundtrip": "passed",
+      "ots": [
+        {
+          "file": "RajdhaniMono-Regular.ttf",
+          "result": "passed"
+        },
+        {
+          "file": "RajdhaniMono-Regular.woff2",
+          "result": "passed"
+        }
+      ],
+      "sha256": "bf2c8f46f0fe439ff2c86d254e308e20e8683ff00b013a479c2bf3066d5c4439"
+    },
+    {
+      "style": "Medium",
+      "weight": 500,
+      "codepoints": 854,
+      "glyphs": 856,
+      "cell_advance": 520,
+      "ascii_shaping": "95/95 fixed advances, zero positioning offsets",
+      "fontconfig_spacing": 100,
+      "nfc_nfd": "passed",
+      "stem_preservation": "passed",
+      "terminal_cell_edges": "passed",
+      "underscore_thickness": 61,
+      "rasterized_glyph_sizes": 3416,
+      "raster_sizes_px": [
+        12,
+        16,
+        20,
+        32
+      ],
+      "woff2_roundtrip": "passed",
+      "ots": [
+        {
+          "file": "RajdhaniMono-Medium.ttf",
+          "result": "passed"
+        },
+        {
+          "file": "RajdhaniMono-Medium.woff2",
+          "result": "passed"
+        }
+      ],
+      "sha256": "64043f08a990dc526d0c774e8aa59d22f6469394436bac526d8a52ad32b60e04"
+    },
+    {
+      "style": "SemiBold",
+      "weight": 600,
+      "codepoints": 854,
+      "glyphs": 856,
+      "cell_advance": 520,
+      "ascii_shaping": "95/95 fixed advances, zero positioning offsets",
+      "fontconfig_spacing": 100,
+      "nfc_nfd": "passed",
+      "stem_preservation": "passed",
+      "terminal_cell_edges": "passed",
+      "underscore_thickness": 80,
+      "rasterized_glyph_sizes": 3416,
+      "raster_sizes_px": [
+        12,
+        16,
+        20,
+        32
+      ],
+      "woff2_roundtrip": "passed",
+      "ots": [
+        {
+          "file": "RajdhaniMono-SemiBold.ttf",
+          "result": "passed"
+        },
+        {
+          "file": "RajdhaniMono-SemiBold.woff2",
+          "result": "passed"
+        }
+      ],
+      "sha256": "f56e1b8a5349f6ea113764aab2f142a0d84583c6b27a0880be43e4f22c366e17"
+    },
+    {
+      "style": "Bold",
+      "weight": 700,
+      "codepoints": 854,
+      "glyphs": 856,
+      "cell_advance": 520,
+      "ascii_shaping": "95/95 fixed advances, zero positioning offsets",
+      "fontconfig_spacing": 100,
+      "nfc_nfd": "passed",
+      "stem_preservation": "passed",
+      "terminal_cell_edges": "passed",
+      "underscore_thickness": 102,
+      "rasterized_glyph_sizes": 3416,
+      "raster_sizes_px": [
+        12,
+        16,
+        20,
+        32
+      ],
+      "woff2_roundtrip": "passed",
+      "ots": [
+        {
+          "file": "RajdhaniMono-Bold.ttf",
+          "result": "passed"
+        },
+        {
+          "file": "RajdhaniMono-Bold.woff2",
+          "result": "passed"
+        }
+      ],
+      "sha256": "6b78463aa288c02146aa324ffaa429628febfc71f35d7ca741d7e93401af44f7"
+    }
+  ]
+}

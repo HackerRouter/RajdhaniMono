@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.ttf binary
+*.woff2 binary
+*.png binary
+*.zip binary
+
+# Preserve the license texts as supplied, including upstream whitespace.
+LICENSE whitespace=-blank-at-eol
+OFL.txt whitespace=-blank-at-eol
+sources/**/OFL.txt whitespace=-blank-at-eol

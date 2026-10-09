@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rajdhani Mono · v0.2 字体预览</title>
+<style>
+__FONT_FACES__
+:root{color-scheme:dark;--bg:#10171e;--panel:#18222c;--text:#dfe8f1;--muted:#9facb9;--border:#344352;--accent:#7de0cc}
+body[data-theme="light"]{color-scheme:light;--bg:#f4f4f0;--panel:#fff;--text:#253342;--muted:#566371;--border:#ced5db;--accent:#116f63}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,sans-serif}
+main{max-width:1080px;margin:auto;padding:36px 28px 60px}
+header{display:flex;justify-content:space-between;gap:18px;align-items:baseline;flex-wrap:wrap}
+h1{font:600 40px/1.1 "Rajdhani Mono",monospace;margin:0 0 8px}
+h2{font-size:14px;font-weight:600;color:var(--muted);margin:0 0 14px}
+p{color:var(--muted);margin:8px 0 22px}
+.version{font-size:13px;color:var(--accent)}
+.controls{display:flex;gap:22px;flex-wrap:wrap;align-items:center;margin:24px 0}
+label{display:flex;gap:8px;align-items:center}
+select,textarea{font:inherit;color:var(--text);background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:8px 10px}
+input{accent-color:var(--accent)}
+.sample{border:1px solid var(--border);background:var(--panel);border-radius:10px;padding:20px 24px;margin-bottom:22px;overflow:auto}
+pre{font-family:"Rajdhani Mono",monospace;font-variant-ligatures:none;font-kerning:none;margin:0;line-height:1.2;tab-size:4}
+.comparison{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.comparison pre{font-size:32px!important;font-weight:400!important;white-space:pre-wrap;overflow-wrap:anywhere}
+.original{font-family:"Rajdhani Original",sans-serif}
+textarea{width:100%;min-height:112px;resize:vertical;font-family:ui-monospace,monospace;margin:8px 0 16px}
+.editable-label{display:block;color:var(--muted)}
+.token{color:var(--accent)}
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--border);padding-top:18px}
+@media(max-width:640px){main{padding:24px 16px}.comparison{grid-template-columns:1fr}.sample{padding:16px}h1{font-size:34px}.controls{gap:12px}}
+</style>
+</head>
+<body data-theme="dark">
+<main>
+<header><h1>Rajdhani Mono</h1><span class="version">v0.2 · 紧凑字格 520/1000 em</span></header>
+<p>保留 Rajdhani 的窄方形风格，为终端与代码排版调整。五个字重，854 个字符。</p>
+<div class="controls">
+<label for="weight">字重 <select id="weight"><option value="300">Light · 300</option><option value="400">Regular · 400</option><option value="500" selected>Medium · 500</option><option value="600">SemiBold · 600</option><option value="700">Bold · 700</option></select></label>
+<label for="size">字号 <output id="size-value">22 px</output> <input id="size" type="range" min="12" max="36" value="22"></label>
+<label for="theme">背景 <select id="theme"><option value="dark">深色</option><option value="light">浅色</option></select></label>
+</div>
+<section class="sample">
+<h2>终端与代码</h2>
+<pre id="terminal"><span class="token">~/projects/rajdhani-mono</span> $ git status --short
+ M build_font.py
+ M terminal_preview.py
+
+def normalize_width(text: str) -&gt; int:
+    cells = [520 for char in text if char.isprintable()]
+    return sum(cells)
+
+const token = "Il1 | O0 | MWmw | {} [] ()";
+if (width !== 520 &amp;&amp; count &gt;= 0) {
+    console.log(`ready: ${count} glyphs`);
+}
+
+┌───────────────────────────────────────────┐
+│ Rajdhani Mono ·  compact terminal preview │
+├───────────────────────────────────────────┤
+│ 0123456789   Il1   O0   MWmw   @#%&amp;       │
+│ → ← ↑ ↓ ↔ ⇒   ≤ ≥ ≠ ∑ ∞ √                 │
+│ ░▒▓███████░░░░░░   56%                    │
+└───────────────────────────────────────────┘
+╔═══════════╦═══════════╗
+║  ABC xyz  ║  012 345  ║
+╚═══════════╩═══════════╝
+▄▀▌▐█ ▏▎▍▌▋▊▉█    main </pre>
+</section>
+<div class="comparison">
+<section class="sample"><h2>原版 Rajdhani · Regular</h2><pre class="original">MWmw Il1 O0 @#%
+0123456789</pre></section>
+<section class="sample"><h2>Rajdhani Mono · Regular</h2><pre>MWmw Il1 O0 @#%
+0123456789</pre></section>
+</div>
+<section>
+<label class="editable-label" for="custom">输入想试看的文字（当前字体主要覆盖拉丁文字；中文使用系统回退字体）</label>
+<textarea id="custom" spellcheck="false">ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+Il1 O0 0123456789 {} [] () &lt;&gt; / \ _ |
+foo_bar__H_H__0123456789
+café naïve Ångström Țară Știință</textarea>
+<div class="sample"><pre id="custom-preview" aria-live="polite"></pre></div>
+</section>
+<footer>非官方衍生字体 · SIL OFL 1.1 · 原字形：Indian Type Foundry / Rajdhani · 补充符号：JetBrains Mono<br>首版不包含中文、天城文、斜体、编程连字或完整 Nerd Font 图标集。推荐从 Medium 500 开始试用。</footer>
+</main>
+<script>
+const weight = document.getElementById('weight');
+const size = document.getElementById('size');
+const theme = document.getElementById('theme');
+const custom = document.getElementById('custom');
+const previews = [document.getElementById('terminal'), document.getElementById('custom-preview')];
+function update() {
+  for (const el of previews) {
+    el.style.fontWeight = weight.value;
+    el.style.fontSize = size.value + 'px';
+  }
+  document.getElementById('size-value').textContent = size.value + ' px';
+  document.body.dataset.theme = theme.value;
+  document.getElementById('custom-preview').textContent = custom.value;
+}
+for (const el of [weight, size, theme, custom]) el.addEventListener('input', update);
+update();
+</script>
+</body>
+</html>

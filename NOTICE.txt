@@ -1,0 +1,40 @@
+Rajdhani Mono — unofficial derivative
+Current version: 0.2
+
+Font software and build recipes are distributed under the SIL Open Font License,
+Version 1.1. See LICENSE and OFL.txt. Original upstream notices are preserved
+without modification in sources/rajdhani/OFL.txt and sources/jetbrains-mono/OFL.txt.
+
+Rajdhani
+--------
+Copyright (c) 2014, Indian Type Foundry (info@indiantypefoundry.com).
+Original project: https://github.com/itfoundry/rajdhani
+Original designers: Satya Rajpurohit, Jyotish Sonowal, Shiva Nalleperumal.
+Distribution used as input: https://github.com/google/fonts/tree/main/ofl/rajdhani
+Pinned commit: 8772f86137e17678cbd3584ca9a3c9486c3e7e50
+Included input styles: Light, Regular, Medium, SemiBold, Bold.
+
+JetBrains Mono
+--------------
+Copyright 2020 The JetBrains Mono Project Authors
+(https://github.com/JetBrains/JetBrainsMono).
+Pinned commit: 19371302b95d218af43299bce79ddbddd0bc364d
+Included input styles: Thin, ExtraLight, Light, Regular, Medium, SemiBold, Bold.
+Only supplemental symbol outlines are incorporated: selected arrows, mathematical
+and technical symbols, box drawing, blocks, geometric shapes, and Powerline symbols.
+No JetBrains Mono Latin letters or programming ligatures are incorporated.
+
+Rajdhani Mono modifications
+--------------------------
+Copyright 2026 Rajdhani Mono contributors.
+The derivative changes character advances, positions and selected outlines;
+redesigns I/l/1/0 and underscores; adds combining-accent positioning and Romanian
+T-comma-below; adapts terminal symbols; renames the family; and regenerates hints.
+It is built from the pinned binary inputs with fontTools and ttfautohint.
+
+The upstream names are used to identify source materials and acknowledge authors.
+Indian Type Foundry and JetBrains do not endorse this unofficial project.
+
+Build tools are external dependencies with their own licenses. They are not
+redistributed as part of this repository. Requirements are pinned in requirements.txt.
+Source input checksums are listed in sources/manifest.json.

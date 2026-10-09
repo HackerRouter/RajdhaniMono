@@ -1,0 +1,74 @@
+{
+  "rajdhani_google_fonts_commit": "8772f86137e17678cbd3584ca9a3c9486c3e7e50",
+  "jetbrains_mono_commit": "19371302b95d218af43299bce79ddbddd0bc364d",
+  "files": [
+    {
+      "path": "sources/jetbrains-mono/JetBrainsMono-Bold.ttf",
+      "sha256": "d22c4f3821d725eb01210d278d95dfcfcaadc34699a06658d47c8a5cc5830ada"
+    },
+    {
+      "path": "sources/jetbrains-mono/JetBrainsMono-ExtraLight.ttf",
+      "sha256": "a6d4b0e43eecb3823925617bd8052af10cb1ff90247687f07c7676f1bd507714"
+    },
+    {
+      "path": "sources/jetbrains-mono/JetBrainsMono-Light.ttf",
+      "sha256": "ba7e27ea0e9803e57fc1837eae3fa7dc4fe59f3dc548859958fa3f8b77f6909b"
+    },
+    {
+      "path": "sources/jetbrains-mono/JetBrainsMono-Medium.ttf",
+      "sha256": "d16e6dc99672734698d629705f617c79f6eb6040f5113efe3a145204dc988109"
+    },
+    {
+      "path": "sources/jetbrains-mono/JetBrainsMono-Regular.ttf",
+      "sha256": "e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1"
+    },
+    {
+      "path": "sources/jetbrains-mono/JetBrainsMono-SemiBold.ttf",
+      "sha256": "12d4b18fe6e1af528e4bea69cb0997aeff22f9e52fccffcf66342dd88aa32ab8"
+    },
+    {
+      "path": "sources/jetbrains-mono/JetBrainsMono-Thin.ttf",
+      "sha256": "7ac062c7792f4539841b74b929e9fa3e74a108ef668c6c167e0e6733b0297ad7"
+    },
+    {
+      "path": "sources/jetbrains-mono/OFL.txt",
+      "sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697"
+    },
+    {
+      "path": "sources/jetbrains-mono/revision.txt",
+      "sha256": "a71b7b073184739bf0fe2a5dc63e6e7ba11c0cc0592f2319e4cd45ec7a01de16"
+    },
+    {
+      "path": "sources/rajdhani/METADATA.pb",
+      "sha256": "1b8e7333c6bd3449be6d576f7a2a4c06087c94591860cc470e95f0812ba847ed"
+    },
+    {
+      "path": "sources/rajdhani/OFL.txt",
+      "sha256": "f62ef357d3a1c3d27edd35a6e1ba350e8a8d13499797964eeadefbf0b3b15d1f"
+    },
+    {
+      "path": "sources/rajdhani/Rajdhani-Bold.ttf",
+      "sha256": "691470dd3286a14e9677940d0bf75796179841ba5215cbda1a2c8910a3226afd"
+    },
+    {
+      "path": "sources/rajdhani/Rajdhani-Light.ttf",
+      "sha256": "140e9f13af69538161c5780fcf7f81594c069aea887e7bffd417ae1c641213c3"
+    },
+    {
+      "path": "sources/rajdhani/Rajdhani-Medium.ttf",
+      "sha256": "12ff7dcfe4c206e3875ac53b1762eab57de6a2fa7f5a86c26b97b88d6591eac2"
+    },
+    {
+      "path": "sources/rajdhani/Rajdhani-Regular.ttf",
+      "sha256": "6e1fc228a8318251a6e569502ec57bac1e4656c582f92f59ccecc4688e039b98"
+    },
+    {
+      "path": "sources/rajdhani/Rajdhani-SemiBold.ttf",
+      "sha256": "94bbd25a18ca665999feb05a537de9fd2b860dcfb78bbe9ca00270825bf235da"
+    },
+    {
+      "path": "sources/rajdhani/revision.txt",
+      "sha256": "aae05854461ef7f2a1d6d95911d98b434c121742c627f0a78986b17b312dfd4e"
+    }
+  ]
+}
